@@ -1,0 +1,37 @@
+{
+  "name": "dynamic-cron-runner",
+  "version": "1.0.0",
+  "description": "A wrapper on node-cron to use the crons on demand, without restarting the server.",
+  "main": "./build/index.ts",
+  "scripts": {
+    "start": "npm-run-all build",
+    "prepublishOnly": "tsc && rollup -c",
+    "build": "rimraf build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/smajumder2017/ts-node-wp-bolierplate.git"
+  },
+  "author": "Subhadip Majumder (majumdersubhadip.sm@gmail.com)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/smajumder2017/ts-node-wp-bolierplate/issues"
+  },
+  "homepage": "https://github.com/smajumder2017/ts-node-wp-bolierplate#readme",
+  "devDependencies": {
+    "@types/node-cron": "^3.0.11",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "ts-loader": "^9.5.1",
+    "tsc-alias": "^1.8.8",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.3"
+  }
+}
