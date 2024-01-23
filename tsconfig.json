@@ -20,11 +20,11 @@
     "outDir": "dist",
     // go to js file when using IDE functions like
     // "Go to Definition" in VSCode
-    "declarationMap": true,
+    "declarationMap": false,
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "Node"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/node_modules", "build"]
+  "exclude": ["node_modules", "**/node_modules", "dist"]
 }
